@@ -1,0 +1,35 @@
+/* font-family: 'Alata', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Alata", sans-serif;
+  font-size: 27px;
+  line-height: 1.37;
+  letter-spacing: -0.025em;
+  margin-bottom: 4px;
+}
+
+.logo-accent {
+  font-family: "Alata", sans-serif;
+  font-size: 27px;
+  line-height: 1.37;
+  letter-spacing: -0.025em;
+  color: #ff3636;
+}
+
+p {
+  color: #767676;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  margin: 0;
+}

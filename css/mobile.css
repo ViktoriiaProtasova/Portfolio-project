@@ -1,0 +1,59 @@
+@media screen and (max-width: 1399px) {
+  body {
+    padding: 16px 16px 35px 16px;
+  }
+
+  header::after {
+    height: 1.5px;
+    width: 100vw;
+    transform: translateX(-16px);
+  }
+
+  .logo {
+    margin-bottom: 22px;
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burger-menu {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+    stroke: var(--primary-light);
+  }
+
+  .recent-projects-list {
+    padding-top: 35px;
+  }
+
+  .recent-projects-item.project-name {
+    margin-top: 347px;
+  }
+
+  .project-img {
+    width: 256px;
+    height: 318px;
+    transform: translateY(-120%);
+    margin: 0 auto;
+  }
+
+  .recent-projects-item-view {
+    transform: translateY(200%);
+  }
+
+  .footer-social-list {
+    transform: translateY(-300%);
+  }
+
+  footer p {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}

@@ -1,15 +1,78 @@
-/* font-family: 'Alata', sans-serif;
-font-family: 'Montserrat', sans-serif; */
+:root {
+  /* MAIN COLORS */
+
+  --primary-light: #000000;
+  --accent-light: #ff3636;
+
+  /* NEUTRAL COLORS */
+
+  --dark-gray-light: #767676;
+  --gray-light: #e1e1e1;
+  --white-light: #ffffff;
+
+  /* SERVICE COLORS */
+
+  --errors-light: #ff3636;
+
+  /* TYPEFACES */
+
+  --main-font: "Montserrat", sans-serif;
+  --logo-font: "Alata", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--main-font);
+  color: var(--primary-light);
+}
+
+header {
+  position: relative;
+}
+
+header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--gray-light);
+}
+
+.current {
+  color: var(--dark-gray-light);
 }
 
 .logo {
   display: block;
-  text-decoration: none;
-  color: inherit;
-  font-family: "Alata", sans-serif;
+  font-family: var(--logo-font);
   font-size: 27px;
   line-height: 1.37;
   letter-spacing: -0.025em;
@@ -17,19 +80,71 @@ body {
 }
 
 .logo-accent {
-  font-family: "Alata", sans-serif;
+  font-family: var(--logo-font);
   font-size: 27px;
   line-height: 1.37;
   letter-spacing: -0.025em;
-  color: #ff3636;
+  color: var(--accent-light);
 }
 
-p {
-  color: #767676;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
+.subtitle {
+  display: none;
+}
+
+.navigation {
+  display: none;
+}
+
+.recent-projects-list {
+  font-size: 14px;
   line-height: 1.25;
-  letter-spacing: -0.025em;
-  margin: 0;
+}
+
+.recent-projects-item.current::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  background-image: url(/images/arrow01.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  margin-left: 4px;
+}
+
+.project-name span {
+  font-size: 27px;
+  color: var(--accent-light);
+}
+
+.project-name::before {
+  content: "01";
+  display: inline-block;
+}
+
+.footer-social-list {
+  display: inline-flex;
+  align-items: center;
+  width: 134px;
+}
+.footer-social-item {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-social-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--dark-gray-light);
 }

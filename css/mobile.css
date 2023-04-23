@@ -30,12 +30,15 @@
     stroke: var(--primary-light);
   }
 
-  .recent-projects-list {
-    padding-top: 35px;
+  .recent-projects-title {
+    margin-top: 50px;
+  }
+
+  .recent-projects-list.current {
+    margin-top: 350px;
   }
 
   .recent-projects-item.project-name {
-    margin-top: 347px;
   }
 
   .project-img {
@@ -50,12 +53,13 @@
   }
 
   .footer-social-list {
-    transform: translateY(-300%);
+    transform: translateY(-600%);
   }
 
   footer p {
     font-size: 12px;
     line-height: 1.25;
+    transform: translateY(-400%);
   }
 
   /* Projects */

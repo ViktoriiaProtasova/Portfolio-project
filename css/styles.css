@@ -59,7 +59,8 @@ header {
   position: relative;
 }
 
-header::after {
+header::after,
+aside::after {
   content: "";
   display: block;
   position: absolute;
@@ -71,7 +72,7 @@ header::after {
 }
 
 .logo {
-  display: block;
+  display: inline-block;
   font-family: var(--logo-font);
   font-size: 27px;
   line-height: 1.37;
@@ -147,4 +148,13 @@ header::after {
   width: 18px;
   height: 18px;
   fill: var(--dark-gray-light);
+}
+
+/* Project */
+
+.projects-title {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.2px;
+  margin-bottom: 59px;
 }

@@ -9,6 +9,12 @@
     transform: translate(200px, -40%);
   }
 
+  .project-header::after {
+    height: 650px;
+    width: 1.5px;
+    transform: translate(80px, -40%);
+  }
+
   .burger-menu {
     display: none;
   }
@@ -24,12 +30,14 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: -0.025em;
+    margin-left: 19px;
   }
 
   .navigation {
     display: block;
     padding-top: 204px;
     margin-bottom: 104px;
+    margin-left: 15px;
   }
 
   .navigation-list-item {
@@ -68,6 +76,7 @@
   .footer-social-list {
     justify-content: space-between;
   }
+
   .footer-social-item {
     width: 36px;
     height: 36px;
@@ -95,51 +104,63 @@
   .projects-body {
     padding: 60px 60px 45px 35px;
   }
+
   .projects-all-wrapper {
+    padding-left: 20px;
+  }
+
+  .without-button-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 70px;
   }
+
   .flex-projects-wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 70px;
   }
 
   .burger-menu-projects {
-    transform: translateY(200px);
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
     background-color: transparent;
     border: transparent;
+    transform: translateY(100%);
     stroke: var(--primary-light);
   }
 
   .projects-logo {
     position: absolute;
-    top: 72%;
-    left: -1.5%;
+    top: 80%;
     transform: rotate(-90deg);
-  }
-
-  aside::after {
-    height: 600px;
-    width: 1.5px;
-    transform: translate(72px, -10%);
+    margin-left: -50px;
   }
 
   .project-gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    row-gap: 100px;
-    column-gap: 300px;
+    row-gap: 60px;
   }
 
   .projects-list {
     font-size: 14px;
     line-height: 2;
   }
+
+  .projects-item {
+    flex-basis: calc((100% - 150px) / 2);
+  }
+
   .projects-item img {
     width: 300px;
     height: 180px;
+  }
+
+  .load-projects {
+    margin-top: 48px;
   }
 }

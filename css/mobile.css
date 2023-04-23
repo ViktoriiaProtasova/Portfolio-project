@@ -3,7 +3,8 @@
     padding: 16px 16px 35px 16px;
   }
 
-  header::after {
+  header::after,
+  aside::after {
     height: 1.5px;
     width: 100vw;
     transform: translateX(-16px);
@@ -55,5 +56,33 @@
   footer p {
     font-size: 12px;
     line-height: 1.25;
+  }
+
+  /* projects */
+  .projects-logo {
+    margin-top: -20px;
+  }
+  .burger-menu-projects {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    transform: translate(250px, 75%);
+    background-color: transparent;
+    border: transparent;
+    stroke: var(--primary-light);
+  }
+  .projects-title {
+    margin-top: 40px;
+  }
+  .projects-list {
+    display: none;
+  }
+  .project-gallery {
+    display: block;
+    margin-top: 370px;
+  }
+  .projects-item {
+    margin-bottom: 50px;
   }
 }

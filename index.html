@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viktoriia Protasova portfolio</title>
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -27,22 +27,23 @@
     <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
-    <h1 class="visualy-hidden">Viktoriia Protasova portfolio</h1>
-    <div class="flex-wrapper">
-      <header>
-        <div class="header-wrapper">
-          <a class="logo" href="./index.html"
-            ><span class="logo-accent">V</span>protasova.</a
-          >
-          <p class="subtitle">front-end developer</p>
-          <button type="button" class="burger-menu">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-        </div>
-      </header>
-      <div class="nav-wrapper">
+    <div class="parent">
+      <div class="div1">
+        <header>
+          <div class="header-wrapper">
+            <a class="logo" href="./index.html"
+              ><span class="logo-accent">V</span>protasova.</a
+            >
+            <p class="subtitle">front-end developer</p>
+            <button type="button" class="burger-menu">
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
+        </header>
+      </div>
+      <div class="div2">
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-list-item">
@@ -62,75 +63,73 @@
             </li>
           </ul>
         </nav>
-        <div>
-          <h2 class="recent-projects-title">Recent Projects</h2>
-          <ul class="recent-projects-list current">
-            <li class="recent-projects-item project-name">
-              <span>&#11827; </span>Web Studio project
-            </li>
-          </гl>
-          <a
-            href="./projects.html"
-            class="recent-projects-link recent-projects-item-view"
-            >View All Projects</a
-          >
-        </div>
+        <h2 class="recent-projects-title">Recent Projects</h2>
+        <ul class="recent-projects-list current">
+          <li class="recent-projects-item project-name">
+            <span>&#11827; </span>Web Studio project
+          </li>
+        </ul>
+        <a
+          href="./projects.html"
+          class="recent-projects-link recent-projects-item-view"
+          >View All Projects</a
+        >
       </div>
-      <main>
-        <section>
-          <picture>
-            <source
-              srcset="./images/webstudio-desktop.jpg"
-              media="(min-width:
+      <section class="div3">
+        <picture>
+          <source
+            srcset="./images/webstudio-desktop.jpg"
+            media="(min-width:
             1400px)"
-            />
-            <source
-              srcset="./images/webstudio-mobile.png"
-              media="(max-width:
+          />
+          <source
+            srcset="./images/webstudio-mobile.png"
+            media="(max-width:
             1399px)"
-            />
-            <img
-              src="./images/webstudio-mobile.png"
-              alt="Web Studio project"
-              width="256"
-              class="project-img"
-            />
-          </picture>
-        </section>
-      </main>
+          />
+          <img
+            src="./images/webstudio-mobile.png"
+            alt="Web Studio project"
+            width="256"
+            class="project-img"
+          />
+        </picture>
+      </section>
+      <footer class="div4">
+        <p>
+          Coded by Viktoriia Protasova | Front-end developer based in Ukraine
+        </p>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link" aria-label="Linkedin">
+              <svg class="footer-social-icon">
+                <use href="./images/icons.svg#icon-linkedin-in"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link" aria-label="Facebook">
+              <svg class="footer-social-icon">
+                <use href="./images/icons.svg#icon-facebook-f"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link" aria-label="GitHub">
+              <svg class="footer-social-icon">
+                <use href="./images/icons.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link" aria-label="Twitter">
+              <svg class="footer-social-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
-    <footer>
-      <p>Coded by Viktoriia Protasova | Front-end developer based in Ukraine</p>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a href="#" class="footer-social-link" aria-label="Linkedin">
-            <svg class="footer-social-icon">
-              <use href="./images/icons.svg#icon-linkedin-in"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a href="#" class="footer-social-link" aria-label="Facebook">
-            <svg class="footer-social-icon">
-              <use href="./images/icons.svg#icon-facebook-f"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a href="#" class="footer-social-link" aria-label="GitHub">
-            <svg class="footer-social-icon">
-              <use href="./images/icons.svg#icon-github"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a href="#" class="footer-social-link" aria-label="Twitter">
-            <svg class="footer-social-icon">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </footer>
   </body>
 </html>

@@ -3,25 +3,36 @@
     padding: 40px 60px 20px 60px;
   }
 
+  .parent {
+    display: grid;
+    grid-template-columns: 250px 350px 780px;
+    grid-template-rows: repeat(3, 1fr) 24px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 5 / 2;
+  }
+  .div2 {
+    grid-area: 1 / 2 / 4 / 3;
+    padding-left: 24px;
+  }
+  .div3 {
+    grid-area: 1 / 3 / 4 / 4;
+  }
+  .div4 {
+    grid-area: 4 / 2 / 5 / 4;
+  }
+
   header::after {
     height: 650px;
     width: 1.5px;
-    transform: translate(200px, -40%);
-  }
-
-  .project-header::after {
-    height: 650px;
-    width: 1.5px;
-    transform: translate(80px, -40%);
+    transform: translate(250px, -40%);
   }
 
   .burger-menu {
     display: none;
-  }
-
-  .flex-wrapper {
-    display: flex;
-    justify-content: space-between;
   }
 
   .subtitle {
@@ -37,7 +48,6 @@
     display: block;
     padding-top: 204px;
     margin-bottom: 104px;
-    margin-left: 15px;
   }
 
   .navigation-list-item {
@@ -59,8 +69,7 @@
   }
 
   .project-img {
-    width: 780px;
-    height: 500px;
+    min-width: 780px;
   }
 
   footer {
@@ -69,8 +78,8 @@
     align-items: baseline;
     font-size: 12px;
     line-height: 1.25px;
-    margin-top: 80px;
-    padding-left: 274px;
+    padding-left: 24px;
+    padding-top: 50px;
   }
 
   .footer-social-list {
@@ -101,12 +110,14 @@
 
   /* Projects */
 
-  .projects-body {
-    padding: 60px 60px 45px 35px;
-  }
-
   .projects-all-wrapper {
     padding-left: 20px;
+  }
+
+  .min-header::after {
+    height: 650px;
+    width: 1.5px;
+    transform: translate(80px, -35%);
   }
 
   .without-button-wrapper {
@@ -132,7 +143,7 @@
     stroke: var(--primary-light);
   }
 
-  .projects-logo {
+  .vertical-logo {
     position: absolute;
     top: 80%;
     transform: rotate(-90deg);
@@ -152,15 +163,51 @@
   }
 
   .projects-item {
-    flex-basis: calc((100% - 150px) / 2);
+    flex-basis: calc((100% - 300px) / 2);
   }
 
   .projects-item img {
-    width: 300px;
-    height: 180px;
+    min-width: 300px;
   }
 
   .load-projects {
     margin-top: 48px;
+  }
+
+  /* About */
+
+  .about-all-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+  }
+
+  .about-content-wrapper {
+    min-width: 530px;
+  }
+
+  .about-title {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .about-text-wrapper {
+    margin-top: 250px;
+    margin-left: 167px;
+  }
+
+  .flex-about-wrapper {
+    display: flex;
+    gap: 70px;
+  }
+
+  .about-img {
+    min-width: 460px;
+    min-height: 270px;
+    margin-left: auto;
+  }
+
+  footer.about-footer {
+    padding-left: 167px;
   }
 }

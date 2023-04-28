@@ -35,37 +35,36 @@
   }
 
   .recent-projects-list.current {
-    margin-top: 350px;
+    margin-top: 325px;
   }
 
   .recent-projects-item.project-name {
+    margin-top: 50px;
   }
 
   .project-img {
-    width: 256px;
-    height: 318px;
+    max-width: 256px;
     transform: translateY(-120%);
     margin: 0 auto;
   }
 
-  .recent-projects-item-view {
-    transform: translateY(200%);
-  }
-
   .footer-social-list {
-    transform: translateY(-600%);
+    transform: translateY(-250%);
   }
 
-  footer p {
+  footer {
     font-size: 12px;
     line-height: 1.25;
-    transform: translateY(-400%);
+    padding-left: 7px;
+    transform: translateY(-250%);
   }
 
   /* Projects */
 
   .projects-title {
     margin-top: 40px;
+    font-size: 14px;
+    line-height: 2;
   }
 
   .projects-list {
@@ -81,13 +80,26 @@
     margin-bottom: 50px;
   }
 
-  .project-name {
-    text-align: center;
-  }
-
   .load-projects {
     display: block;
     transform: translateY(-300px);
-    margin: 0 auto;
+  }
+
+  /* About */
+
+  .about-title {
+    margin-top: 39px;
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--primary-light);
+  }
+
+  footer.about-footer {
+    margin-top: 370px;
+  }
+  .about-text-wrapper {
+    margin-bottom: 34px;
   }
 }

@@ -41,7 +41,6 @@ ul {
 .project-gallery {
   list-style: none;
   counter-reset: my-counter;
-  margin-left: 15px;
 }
 
 .recent-projects-list li:before,
@@ -77,6 +76,9 @@ aside::after {
   display: block;
   position: absolute;
   background-color: var(--gray-light);
+}
+picture {
+  margin: 0;
 }
 
 .visualy-hidden {
@@ -122,7 +124,6 @@ aside::after {
 }
 
 .recent-projects-title {
-  margin-left: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -145,11 +146,13 @@ aside::after {
 .recent-projects-list {
   font-size: 14px;
   line-height: 2;
+  color: var(--primary-light);
 }
 
 .recent-projects-item-view {
   font-size: 14px;
   line-height: 2;
+  color: var(--primary-light);
 }
 
 .project-name span {
@@ -206,4 +209,28 @@ aside::after {
   line-height: 2;
   color: var(--white-light);
   cursor: pointer;
+}
+
+/* About */
+
+.about-text-wrapper span {
+  font-size: 14px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: var(--accent-light);
+}
+
+.about-text-wrapper h2 {
+  margin-bottom: 31px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.79;
+  text-transform: uppercase;
+  color: var(--primary-light);
+}
+
+.about-text-wrapper {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
 }

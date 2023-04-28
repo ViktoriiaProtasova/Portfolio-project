@@ -5,6 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/660d72a753.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
-  <body></body>
+  <body class="projects-body">
+    <div class="flex-about-wrapper">
+      <header class="min-header">
+        <div class="header-wrapper">
+          <a class="logo vertical-logo" href="./index.html"
+            ><span class="logo-accent">V</span>protasova.</a
+          >
+          <button type="button" class="burger-menu burger-menu-projects">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="about-all-wrapper">
+          <div class="about-content-wrapper">
+            <h1 class="about-title">About</h1>
+            <div class="about-text-wrapper">
+              <h2>
+                <span>Hello there! My name is </span> <br />
+                Viktoriia Protasova
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
+                arcu dui. Aenean placerat mauris nisl. Proin vitae urna eu sem
+                pellentesque laoreet. Mauris varius quam ut libero tempor
+                rutrum. Sed quis maximus nunc. Nulla eu erat vel nunc
+                consectetur ornare. Nam bibendum cursus viverra. Aenean placerat
+                bibendum quam, eugiat elit tincidunt in. Curabitur nec aliquet
+                erat, et dictum nulla. eugiat elit tincidunt in. Curabitur nec
+                aliquet erat, et dictum nulla.Sed quis maximus nunc. Nulla eu
+                erat vel nunc consectetur ornare.Sed quis maximus nunc..
+              </p>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcset="./images/about-photo.jpg"
+              media="(min-width:
+                1400px)"
+            />
+            <source
+              srcset="./images/about-photo.jpg"
+              media="(max-width:
+                1399px)"
+            />
+            <img
+              src="./images/about-photo.jpg"
+              alt="Web Studio project"
+              width="300"
+              class="about-img"
+            />
+          </picture>
+        </div>
+        <footer class="about-footer">
+          <p>
+            Coded by Viktoriia Protasova | Front-end developer based in Ukraine
+          </p>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link" aria-label="Linkedin">
+                <svg class="footer-social-icon">
+                  <use href="./images/icons.svg#icon-linkedin-in"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link" aria-label="Facebook">
+                <svg class="footer-social-icon">
+                  <use href="./images/icons.svg#icon-facebook-f"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link" aria-label="GitHub">
+                <svg class="footer-social-icon">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link" aria-label="Twitter">
+                <svg class="footer-social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>

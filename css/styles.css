@@ -18,6 +18,11 @@
 
   --main-font: "Montserrat", sans-serif;
   --logo-font: "Alata", sans-serif;
+
+  /* ANIMATIONS */
+
+  --animation-duration: 500ms;
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -77,8 +82,13 @@ aside::after {
   position: absolute;
   background-color: var(--gray-light);
 }
+
 picture {
   margin: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .visualy-hidden {
@@ -197,6 +207,20 @@ picture {
   margin-bottom: 59px;
 }
 
+.project-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.79;
+  color: var(--primary-light);
+}
+
+.project-name p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--dark-gray-light);
+}
+
 .load-projects {
   display: block;
   width: 123px;
@@ -283,3 +307,141 @@ picture {
   line-height: 2;
   color: var(--dark-gray-light);
 }
+
+/* Certification */
+
+.certification-title {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.2px;
+}
+
+/* Modal Window */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: opacity var(--animation-duration) var(--animation-timing-function),
+    visibility var(--animation-duration) var(--animation-timing-function);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-close-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.modal-close-btn-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+  width: 300px;
+  min-height: 100%;
+  padding: 24px;
+  background-color: var(--white-light);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform var(--animation-duration)
+    var(--animation-timing-function);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translateX(-100%);
+}
+
+.modal-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--primary-light);
+}
+
+/* Mobile Menu */
+
+/* .mob-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding-bottom: 40px;
+  background-color: var(--main-background-color);
+}
+.mob-menu-container {
+  height: 100%;
+  position: relative;
+  padding-top: 24px;
+  padding-right: 16px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+.mob-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color var(--animation-duration)
+    var(--animation-timing-function);
+}
+.mob-close-btn-icon {
+  display: block;
+  width: 8px;
+  height: 8px;
+  transition: fill var(--animation-duration) var(--animation-timing-function);
+}
+.mob-close-btn:is(:hover, :focus) {
+  background-color: var(--pressed-state-color);
+}
+.mob-close-btn:is(:hover, :focus) .mob-close-btn-icon {
+  fill: var(--additional-text-color);
+}
+.mob-menu-list {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-menu-link {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  transition: color var(--animation-duration) var(--animation-timing-function);
+}
+.mob-menu-link:is(:hover, :focus) {
+  color: var(--primary-brand-color);
+} */

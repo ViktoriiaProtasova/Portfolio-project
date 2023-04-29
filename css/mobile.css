@@ -87,7 +87,8 @@
 
   /* About */
 
-  .about-title {
+  .about-title,
+  .certification-title {
     margin-top: 39px;
     margin-bottom: 28px;
     font-weight: 400;
@@ -121,10 +122,17 @@
     color: var(--dark-gray-light);
   }
 
-  .address {
-  }
-
   footer.contact-footer {
     margin-top: 370px;
+  }
+
+  /* Certification */
+
+  .project-gallery.certification {
+    margin-top: 220px;
+  }
+
+  footer.certification-footer {
+    transform: translateY(-20%);
   }
 }

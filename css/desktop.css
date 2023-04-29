@@ -110,7 +110,8 @@
 
   /* Projects */
 
-  .projects-all-wrapper {
+  .projects-all-wrapper,
+  .certification-all-wrapper {
     padding-left: 20px;
   }
 
@@ -228,5 +229,39 @@
 
   footer.contact-footer {
     padding-left: 127px;
+  }
+
+  /* Certification */
+
+  .flex-certification-wrapper {
+    display: flex;
+    gap: 70px;
+  }
+
+  .project-gallery.certification {
+    padding-left: 178px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 3px;
+    column-gap: 300px;
+  }
+
+  footer.certification-footer {
+    padding-top: 50px;
+  }
+
+  /* Modal Window */
+
+  .modal-logo-wrapper {
+    display: flex;
+    transform: translateY(253px);
+    justify-content: space-around;
+    align-items: last baseline;
+  }
+
+  .modal-list {
+    transform: translateY(320px);
+    padding-left: 30px;
   }
 }

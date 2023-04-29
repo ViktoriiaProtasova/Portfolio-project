@@ -178,6 +178,7 @@
 
   .about-all-wrapper {
     display: flex;
+
     justify-content: space-between;
     gap: 70px;
   }
@@ -196,7 +197,7 @@
     margin-left: 167px;
   }
 
-  .flex-about-wrapper {
+  .flex-pages-wrapper {
     display: flex;
     gap: 70px;
   }
@@ -209,5 +210,23 @@
 
   footer.about-footer {
     padding-left: 167px;
+  }
+
+  /* Contact */
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 743px;
+    padding-top: 112px;
+    padding-left: 125px;
+  }
+
+  .address {
+    padding-top: 112px;
+  }
+
+  footer.contact-footer {
+    padding-left: 127px;
   }
 }

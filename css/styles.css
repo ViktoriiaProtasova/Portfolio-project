@@ -335,6 +335,9 @@ button {
   pointer-events: none;
 }
 
+.is-filtered {
+}
+
 .modal-close-btn {
   border: none;
   background-color: transparent;

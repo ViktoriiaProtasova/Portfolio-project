@@ -234,3 +234,52 @@ picture {
   font-size: 14px;
   line-height: 2;
 }
+
+/* Contact */
+
+.content-contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 250px;
+}
+
+.contact-form input {
+  width: 100%;
+  height: 31px;
+  margin-bottom: 64px;
+  padding: 31px 0;
+  border: none;
+  border-bottom: 1px solid var(--primary-light);
+}
+
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--primary-light);
+  margin-bottom: 39px;
+}
+
+.contact-submit-btn {
+  width: 85px;
+  height: 41px;
+  background: var(--primary-light);
+  border-radius: 5px;
+  color: var(--white-light);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.address-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--dark-gray-light);
+}

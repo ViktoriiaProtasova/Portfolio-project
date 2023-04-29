@@ -5,6 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/660d72a753.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="flex-pages-wrapper">
+      <header class="min-header">
+        <div class="header-wrapper">
+          <a class="logo vertical-logo" href="./index.html"
+            ><span class="logo-accent">V</span>protasova.</a
+          >
+          <button type="button" class="burger-menu burger-menu-projects">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main>
+        <h1 class="about-title">Contact</h1>
+        <div class="content-contact-wrapper">
+          <form class="contact-form">
+            <label>
+              <input type="text" name="name" placeholder="Insert Your Name" />
+            </label>
+            <label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Insert Your E-mail Address"
+              />
+            </label>
+            <label>
+              <textarea
+                name="feedback"
+                rows="5"
+                placeholder="Type your message here..."
+              ></textarea>
+            </label>
+            <button type="submit" class="contact-submit-btn">Send</button>
+          </form>
+          <address class="address">
+            <h2>Project Inquiries</h2>
+            <ul class="address-list">
+              <li>
+                <a href="mailto:protasova.dev@gmail.com"
+                  >protasova.dev@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:+380662684549">+380662684549</a></li>
+            </ul>
+          </address>
+        </div>
+        <footer class="contact-footer">
+          <p>
+            Coded by Viktoriia Protasova | Front-end developer based in Ukraine
+          </p>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link" aria-label="Linkedin">
+                <svg class="footer-social-icon">
+                  <use href="./images/icons.svg#icon-linkedin-in"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link" aria-label="Facebook">
+                <svg class="footer-social-icon">
+                  <use href="./images/icons.svg#icon-facebook-f"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link" aria-label="GitHub">
+                <svg class="footer-social-icon">
+                  <use href="./images/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link" aria-label="Twitter">
+                <svg class="footer-social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>

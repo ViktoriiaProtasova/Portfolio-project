@@ -99,7 +99,32 @@
   footer.about-footer {
     margin-top: 370px;
   }
+
   .about-text-wrapper {
     margin-bottom: 34px;
+  }
+
+  /* Contact  */
+
+  .content-contact-wrapper {
+    display: block;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin-bottom: 79px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--dark-gray-light);
+  }
+
+  .address {
+  }
+
+  footer.contact-footer {
+    margin-top: 370px;
   }
 }

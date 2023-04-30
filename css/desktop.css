@@ -161,7 +161,6 @@
     justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 60px;
-    padding-bottom: 20px;
   }
 
   .projects-list {

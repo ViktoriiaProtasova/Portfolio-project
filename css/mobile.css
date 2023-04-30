@@ -10,8 +10,8 @@
   }
 
   .swiper {
-    width: 300px;
-    height: auto;
+    width: 256px;
+    height: 318px;
     padding-top: 25px;
   }
 
@@ -45,7 +45,12 @@
     display: none;
   }
 
-  .recent-projects-item.project-name {
+  /* .recent-projects-item.project-name {
+    margin-top: 25px;
+  } */
+
+  .recent-projects-item-view {
+    display: block;
     margin-top: 25px;
   }
 

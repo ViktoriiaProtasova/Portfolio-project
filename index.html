@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Viktoriia Protasova is a Full Stack Developer based in Ukraine. Currently a Full Stack Developer course student with a strong interest in digital development and a highly motivated mindset, planning to start a career as a Full Stack Web Developer."
+    />
+    <title>
+      Hi! My name is Viktoriia Protasova. I'm a Full Stack Developer based in
+      Ukraine.
+    </title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -22,6 +29,10 @@
       src="https://kit.fontawesome.com/660d72a753.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
@@ -31,7 +42,7 @@
       <div class="div1">
         <header>
           <div class="header-wrapper">
-            <a class="logo" href="./index.html"
+            <a class="logo" href="./index.html" title="Home Page"
               ><span class="logo-accent">V</span>protasova.</a
             >
             <p class="subtitle">front-end developer</p>
@@ -49,7 +60,7 @@
             <div data-modal class="backdrop is-hidden">
               <div class="modal">
                 <div class="modal-logo-wrapper">
-                  <a class="logo" href="./index.html"
+                  <a class="logo" href="./index.html" title="Home Page"
                     ><span class="logo-accent">V</span>protasova.</a
                   >
                   <button
@@ -63,10 +74,16 @@
                   </button>
                 </div>
                 <ul class="modal-list">
-                  <li><a href="./projects.html">Projects</a></li>
-                  <li><a href="./about.html">About</a></li>
-                  <li><a href="./contact.html">Contact</a></li>
-                  <li><a href="./certification.html">Certificates</a></li>
+                  <li>
+                    <a href="./projects.html" title="Projects">Projects</a>
+                  </li>
+                  <li><a href="./about.html" title="About">About</a></li>
+                  <li><a href="./contact.html" title="Contact">Contact</a></li>
+                  <li>
+                    <a href="./certification.html" title="Certificates"
+                      >Certificates</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -76,29 +93,29 @@
       <div class="div2">
         <nav class="navigation">
           <ul class="navigation-list">
+            <li class="navigation-list-item current">Navigation</li>
             <li class="navigation-list-item">
-              <a href="./index.html" class="current">Navigation</a>
+              <a href="./projects.html" title="Projects">Projects</a>
             </li>
             <li class="navigation-list-item">
-              <a href="./projects.html">Projects</a>
+              <a href="./about.html" title="About">About</a>
             </li>
             <li class="navigation-list-item">
-              <a href="./about.html">About</a>
+              <a href="./contact.html" title="Contact">Contact</a>
             </li>
             <li class="navigation-list-item">
-              <a href="./contact.html">Contact</a>
-            </li>
-            <li class="navigation-list-item">
-              <a href="./certification.html">Certification</a>
+              <a href="./certification.html" title="Certificates"
+                >Certification</a
+              >
             </li>
           </ul>
         </nav>
         <h2 class="recent-projects-title">Recent Projects</h2>
-        <ul class="recent-projects-list current">
+        <!-- <ul class="recent-projects-list current">
           <li class="recent-projects-item project-name">
             <span>&#11827; </span>Web Studio project
           </li>
-        </ul>
+        </ul> -->
         <a
           href="./projects.html"
           class="recent-projects-link recent-projects-item-view"
@@ -106,24 +123,102 @@
         >
       </div>
       <section class="div3">
-        <picture>
-          <source
-            srcset="./images/webstudio-desktop.jpg"
-            media="(min-width:
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="./images/webstudio-desktop.jpg"
+                  media="(min-width:
             1400px)"
-          />
-          <source
-            srcset="./images/webstudio-mobile.png"
-            media="(max-width:
+                />
+                <source
+                  srcset="./images/webstudio-mobile.png"
+                  media="(max-width:
             1399px)"
-          />
-          <img
-            src="./images/webstudio-mobile.png"
-            alt="Web Studio project"
-            width="256"
-            class="project-img"
-          />
-        </picture>
+                />
+                <img
+                  src="./images/webstudio-mobile.png"
+                  alt="Web Studio project"
+                  width="256"
+                  class="project-img"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="./images/hotel-complex-project.jpg"
+                  media="(min-width:
+            1400px)"
+                />
+                <source
+                  srcset="./images/hotel-complex-project.jpg"
+                  media="(max-width:
+            1399px)"
+                />
+                <img
+                  src="./images/hotel-complex-project.jpg"
+                  alt="Web Studio project"
+                  width="256"
+                  class="project-img"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="./images/nft-marketplace.jpg"
+                  media="(min-width:
+            1400px)"
+                />
+                <source
+                  srcset="./images/nft-marketplace.jpg"
+                  media="(max-width:
+            1399px)"
+                />
+                <img
+                  src="./images/nft-marketplace.jpg"
+                  alt="NFT-marketplace project"
+                  width="256"
+                  class="project-img"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="./images/coding-workshops-for-women-shecodes.jpg"
+                  media="(min-width:
+            1400px)"
+                />
+                <source
+                  srcset="./images/coding-workshops-for-women-shecodes.jpg"
+                  media="(max-width:
+            1399px)"
+                />
+                <img
+                  src="./images/coding-workshops-for-women-shecodes.jpg"
+                  alt="Weather APP project"
+                  width="256"
+                  class="project-img"
+                />
+              </picture>
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
       </section>
       <footer class="div4">
         <p>
@@ -185,6 +280,8 @@
         </ul>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

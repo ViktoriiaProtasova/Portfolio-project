@@ -203,6 +203,14 @@ button {
   height: 100%;
 }
 
+.project-github-link {
+  color: var(--dark-gray-light);
+}
+
+.project-github-link:is(:hover, :focus) {
+  color: var(--primary-light);
+}
+
 .footer-social-link:is(:hover, :focus) .footer-social-icon {
   fill: var(--primary-light);
 }

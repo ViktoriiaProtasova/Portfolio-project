@@ -21,7 +21,8 @@
 
   /* ANIMATIONS */
 
-  --animation-duration: 500ms;
+  --animation-duration-long: 500ms;
+  --animation-duration: 250ms;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -202,10 +203,15 @@ button {
   height: 100%;
 }
 
+.footer-social-link:is(:hover, :focus) .footer-social-icon {
+  fill: var(--primary-light);
+}
+
 .footer-social-icon {
   width: 18px;
   height: 18px;
   fill: var(--dark-gray-light);
+  transition: fill var(--animation-duration) var(--animation-timing-function);
 }
 
 /* Projects */
@@ -230,6 +236,7 @@ button {
   line-height: 1.25;
   color: var(--dark-gray-light);
 }
+
 /* 
 .load-projects {
   display: block;
@@ -243,6 +250,13 @@ button {
   line-height: 2;
   color: var(--white-light);
   cursor: pointer;
+} */
+
+/* 
+.load-projects:hover,
+.load-projects:focus {
+  background: var(--dark-gray-light);
+  border-radius: 5px;
 } */
 
 /* About */
@@ -297,8 +311,17 @@ button {
   width: 85px;
   height: 41px;
   background: var(--primary-light);
+  border: none;
   border-radius: 5px;
   color: var(--white-light);
+  transition: background var(--animation-duration)
+    var(--animation-timing-function);
+}
+
+.contact-submit-btn:hover,
+.contact-submit-btn:focus {
+  background: var(--dark-gray-light);
+  border-radius: 5px;
 }
 
 .address {
@@ -336,8 +359,9 @@ button {
   height: 100vh;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.9);
-  transition: opacity var(--animation-duration) var(--animation-timing-function),
-    visibility var(--animation-duration) var(--animation-timing-function);
+  transition: opacity var(--animation-duration-long)
+      var(--animation-timing-function),
+    visibility var(--animation-duration-long) var(--animation-timing-function);
 }
 .is-hidden {
   opacity: 0;
@@ -373,7 +397,7 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform var(--animation-duration)
+  transition: transform var(--animation-duration-long)
     var(--animation-timing-function);
 }
 

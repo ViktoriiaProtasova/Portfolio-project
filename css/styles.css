@@ -42,18 +42,6 @@ ul {
   padding-left: 0;
 }
 
-.recent-projects-list,
-.project-gallery {
-  list-style: none;
-  counter-reset: my-counter;
-}
-
-.recent-projects-list li:before,
-.project-gallery li:before {
-  counter-increment: my-counter;
-  content: counter(my-counter) " ";
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -91,6 +79,18 @@ button {
   cursor: pointer;
 }
 
+.recent-projects-list,
+.project-gallery {
+  list-style: none;
+  counter-reset: my-counter;
+}
+
+.recent-projects-list li:before,
+.project-gallery li:before {
+  counter-increment: my-counter;
+  content: counter(my-counter) " ";
+}
+
 .visualy-hidden {
   position: absolute;
   width: 1px;
@@ -106,6 +106,16 @@ button {
 
 .current {
   color: var(--dark-gray-light);
+}
+
+.swiper {
+  width: 780px;
+  height: 500px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: var(--primary-light);
 }
 
 .logo {
@@ -198,7 +208,7 @@ button {
   fill: var(--dark-gray-light);
 }
 
-/* Project */
+/* Projects */
 
 .projects-title {
   font-weight: 400;
@@ -220,7 +230,7 @@ button {
   line-height: 1.25;
   color: var(--dark-gray-light);
 }
-
+/* 
 .load-projects {
   display: block;
   width: 123px;
@@ -233,7 +243,7 @@ button {
   line-height: 2;
   color: var(--white-light);
   cursor: pointer;
-}
+} */
 
 /* About */
 
